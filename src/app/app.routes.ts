@@ -3,6 +3,7 @@ import { FirstOperatorComponent } from './first-operator/first-operator.componen
 import { MapOperatorComponent } from './map-operator/map-operator.component';
 import { ObservableComponent } from './observable/observable.component';
 import { OfOperatorComponent } from './of-operator/of-operator.component';
+import { TapOperatorComponent } from './tap-operator/tap-operator.component';
 
 export const routes: Routes = [
   {
@@ -20,5 +21,9 @@ export const routes: Routes = [
   {
     path: 'first-operator',
     component: FirstOperatorComponent,
+  },
+  {
+    path: 'tap-operator',
+    component: TapOperatorComponent,
   },
 ];
