@@ -1,27 +1,50 @@
-# NgRxjs
+# Angular RxJS Operators Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+Este projeto Angular demonstra o uso de diversos operadores RxJS de forma simples e didática.
 
-## Development server
+## Operadores Implementados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Atualmente, os seguintes operadores estão disponíveis para visualização através das rotas da aplicação:
 
-## Code scaffolding
+- [`/observable`](./src/app/observable): Criação e uso básico de `Observable`.
+- [`/of-operator`](./src/app/of-operator): Demonstração do operador `of`.
+- [`/map-operator`](./src/app/map-operator): Transformação de valores com `map`.
+- [`/tap-operator`](./src/app/tap-operator): Uso de `tap` para efeitos colaterais (debug).
+- [`/switch-map-operator`](./src/app/switch-map-operator): Substituição de fluxos com `switchMap`.
+- [`/first-operator`](./src/app/first-operator): Substituição de fluxos com `first-operator`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como executar o projeto
 
-## Build
+1. Instale as dependências:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+```
 
-## Running unit tests
+2. Inicie o servidor de desenvolvimento:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng serve
+```
 
-## Running end-to-end tests
+3. Acesse no navegador:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+http://localhost:4200
+```
 
-## Further help
+## Estrutura preparada para novos operadores
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+O projeto já está estruturado para facilitar a adição de novos operadores. Basta:
+
+1. Criar um novo componente na pasta `app`.
+2. Adicionar a rota no `app-routes.ts`.
+3. Adicionar o link no menu (caso necessário).
+
+## Objetivo
+
+Este projeto serve como material de estudo para desenvolvedores que desejam aprender e praticar os conceitos fundamentais do RxJS no Angular.
+
+---
+
+Sinta-se à vontade para contribuir!
